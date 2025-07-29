@@ -1,5 +1,4 @@
 const express = require("express");
-const { routes } = require("../app");
 const router = express.Router();
 const { body } = require("express-validator")
 const userController = require("../controllers/user.controller")
@@ -14,4 +13,4 @@ router.post("/register",[
     userController.registerUser
 )
 
-module.exports = routes;
+module.exports = router;
